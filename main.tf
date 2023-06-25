@@ -13,8 +13,8 @@ variable "params" {
     { name = "roboshop.dev.frontend.payment_url", value="http://payment-dev.rohdevops.online:8080/",type="String"},
     { name = "roboshop.dev.frontend.shipping_url", value="http://shipping-dev.rohdevops.online:8080/",type="String"},
     { name = "roboshop.dev.catalogue.mongo", value="true",type="String"},
-    { name = "roboshop.dev.cart.redis_host", value = "redis-dev.rdevopsb73.online", type = "String" },
-    { name = "roboshop.dev.cart.catalogue_host", value = "catalogue-dev.rdevopsb73.online", type = "String" },
+    { name = "roboshop.dev.cart.redis_host", value = "redis-dev.rohdevops.online", type = "String" },
+    { name = "roboshop.dev.cart.catalogue_host", value = "catalogue-dev.rohdevops.online", type = "String" },
     { name = "roboshop.dev.cart.catalogue_port", value = "8080", type = "String" },
     { name = "roboshop.dev.catalogue.mongo_url", value="mongodb://mongodb-dev.rohdevops.online:27017/catalogue",type="String"},
     { name = "roboshop.dev.payment.cart_url", value="cart-dev.rohdevops.online",type="String"},
@@ -30,7 +30,6 @@ variable "params" {
     { name = "roboshop.dev.user.mongo", value="true",type="String"},
     { name = "roboshop.dev.rabbitmq.amqp_user", value = "roboshop", type = "String" },
     { name = "roboshop.dev.mysql.username", value = "roboshop123", type = "String" },
-
     #password is given manually.
     { name = "roboshop.dev.payment.amqp_password", value="roboshop123",type="SecureString"},
     { name = "roboshop.dev.rabbitmq.amqp_pass", value = "roboshop123", type = "SecureString" },
