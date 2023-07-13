@@ -29,7 +29,7 @@ variable "params" {
     { name = "roboshop.dev.user.redis_host", value="redis-dev.rohdevops.online",type="String"},
     { name = "roboshop.dev.user.mongo", value="true",type="String"},
     { name = "roboshop.dev.rabbitmq.amqp_user", value = "roboshop", type = "String" },
-    { name = "roboshop.dev.mysql.username", value = "roboshop123", type = "String" },
+    { name = "roboshop.dev.mysql.username", value = "roboshop", type = "String" },
 
 
     #password is given manually.
