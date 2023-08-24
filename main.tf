@@ -3,15 +3,17 @@ resource "aws_ssm_parameter" "param" {
   name = var.params[count.index].name
   type = var.params[count.index].type
   value = var.params[count.index].value
+#  overwrite = true
 }
 
 variable "params" {
   default = [
-    { name = "roboshop.dev.frontend.catalogue_url", value="http://catalogue-dev.rohdevops.online:8080/",type="String"},
-    { name = "roboshop.dev.frontend.cart_url", value="http://cart-dev.rohdevops.online:8080/",type="String"},
-    { name = "roboshop.dev.frontend.user_url", value="http://user-dev.rohdevops.online:8080/",type="String"},
-    { name = "roboshop.dev.frontend.payment_url", value="http://payment-dev.rohdevops.online:8080/",type="String"},
-    { name = "roboshop.dev.frontend.shipping_url", value="http://shipping-dev.rohdevops.online:8080/",type="String"},
+    { name = "roboshop.dev.frontend.catalogue_url", value="https://catalogue-dev.rohdevops.online/",type="String"},
+    { name = "roboshop.dev.frontend.cart_url", value="https://cart-dev.rohdevops.online/",type="String"},
+    { name = "roboshop.dev.frontend.user_url", value="https://user-dev.rohdevops.online/",type="String"},
+    { name = "roboshop.dev.frontend.payment_url", value="https://payment-dev.rohdevops.online/",type="String"},
+    { name = "roboshop.dev.frontend.shipping_url", value="https://shipping-dev.rohdevops.online/",type="String"},
+
     { name = "roboshop.dev.catalogue.mongo", value="true",type="String"},
     { name = "roboshop.dev.cart.redis_host", value = "redis-dev.rohdevops.online", type = "String" },
     { name = "roboshop.dev.cart.catalogue_host", value = "catalogue-dev.rohdevops.online", type = "String" },
