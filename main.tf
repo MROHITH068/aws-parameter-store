@@ -18,8 +18,8 @@ variable "params" {
     { name = "roboshop.dev.catalogue.mongo", value="true",type="String"},
 #    { name = "roboshop.dev.catalogue.mongo_url", value="mongodb://mongodb-dev.rohdevops.online:27017/catalogue",type="String"},
 
-    { name = "roboshop.dev.cart.catalogue_port", value = "8080", type = "String" },
-    { name = "roboshop.dev.cart.redis_host", value = "redis-dev.rohdevops.online", type = "String" },
+    { name = "roboshop.dev.cart.catalogue_port", value = "80", type = "String" },
+    { name = "roboshop.dev.cart.redis_host", value = "elasticache-dev.krhend.clustercfg.use1.cache.amazonaws.com", type = "String" },
     { name = "roboshop.dev.cart.catalogue_host", value = "catalogue-dev.rohdevops.online", type = "String" },
 
     { name = "roboshop.dev.payment.cart_url", value="cart-dev.rohdevops.online",type="String"},
