@@ -32,7 +32,7 @@ variable "params" {
     { name = "roboshop.dev.shipping.db_host", value="mysql-dev.rohdevops.online",type="String"},
     { name = "roboshop.dev.shipping.cart_endpoint", value="cart-dev.rohdevops.online:8080",type="String"},
 
-    { name = "roboshop.dev.user.mongo_url", value="mongodb://mongodb-dev.rohdevops.online:27017/users",type="String"},
+#    { name = "roboshop.dev.user.mongo_url", value="mongodb://mongodb-dev.rohdevops.online:27017/users",type="String"},
     { name = "roboshop.dev.user.redis_host", value="elasticache-dev.krhend.clustercfg.use1.cache.amazonaws.com",type="String"},
     { name = "roboshop.dev.user.mongo", value="true",type="String"},
 
