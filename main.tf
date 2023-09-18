@@ -23,14 +23,14 @@ variable "params" {
     { name = "roboshop.dev.cart.catalogue_host", value = "catalogue-dev.rohdevops.online", type = "String" },
 
     { name = "roboshop.dev.payment.cart_url", value="cart-dev.rohdevops.online",type="String"},
-    { name = "roboshop.dev.payment.cart_port", value="8080",type="String"},
+    { name = "roboshop.dev.payment.cart_port", value="80",type="String"},
     { name = "roboshop.dev.payment.user_url", value="user-dev.rohdevops.online",type="String"},
-    { name = "roboshop.dev.payment.user_port", value="8080",type="String"},
+    { name = "roboshop.dev.payment.user_port", value="80",type="String"},
     { name = "roboshop.dev.payment.amqp_host", value="rabbitmq-dev.rohdevops.online",type="String"},
     { name = "roboshop.dev.payment.amqp_user", value="roboshop",type="String"},
 
-    { name = "roboshop.dev.shipping.db_host", value="mysql-dev.rohdevops.online",type="String"},
-    { name = "roboshop.dev.shipping.cart_endpoint", value="cart-dev.rohdevops.online:8080",type="String"},
+    { name = "roboshop.dev.shipping.db_host", value="rds-dev.cluster-cflw1vmkzsr2.us-east-1.rds.amazonaws.com",type="String"},
+    { name = "roboshop.dev.shipping.cart_endpoint", value="cart-dev.rohdevops.online:80",type="String"},
 
 #    { name = "roboshop.dev.user.mongo_url", value="mongodb://mongodb-dev.rohdevops.online:27017/users",type="String"},
     { name = "roboshop.dev.user.redis_host", value="elasticache-dev.krhend.clustercfg.use1.cache.amazonaws.com",type="String"},
