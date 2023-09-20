@@ -38,7 +38,7 @@ variable "params" {
     { name = "roboshop.dev.rabbitmq.amqp_user", value = "roboshop", type = "String" },
     { name = "roboshop.dev.mysql.username", value = "roboshop", type = "String" },
     { name = "roboshop.dev.docdb.username", value = "roboshop", type = "String" },
-    { name = "roboshop.dev.mysql.endpoint", value = "rds-dev.cluster-cflw1vmkzsr2.us-east-1.rds.amazonaws.com", type = "SecureString" },
+    { name = "roboshop.dev.mysql.endpoint", value = "rds-dev.cluster-cflw1vmkzsr2.us-east-1.rds.amazonaws.com", type = "String" },
 
 
     #password is given manually.
