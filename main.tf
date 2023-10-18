@@ -87,7 +87,7 @@ variable "params" {
     { name = "roboshop.prod.mysql.endpoint", value = "rds-prod.cluster-cflw1vmkzsr2.us-east-1.rds.amazonaws.com", type = "String" },
 
 
-    #password is given manually.
+    # password is given manually.
     { name = "roboshop.prod.payment.amqp_password", value="roboshop123",type="SecureString"},
     { name = "roboshop.prod.rabbitmq.amqp_pass", value = "roboshop123", type = "SecureString" },
     { name = "roboshop.prod.mysql.password", value = "roboshop123", type = "SecureString" },
@@ -97,6 +97,9 @@ variable "params" {
     { name = "roboshop.prod.user.mongo_url", value=" mongodb://roboshop:roboshop123@docdb-prod.cluster-cflw1vmkzsr2.us-east-1.docdb.amazonaws.com:27017/users?tls=true&tlsCAFile=global-bundle.pem&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false",type="SecureString"},
     { name = "roboshop.prod.user.docdb_endpoint", value="docdb-prod.cluster-cflw1vmkzsr2.us-east-1.docdb.amazonaws.com",type="String"},
 
+    # nexus
+    { name = "roboshop.nexus.username", value="admin",type="SecureString"},
+    { name = "roboshop.nexus.password", value="admin123",type="SecureString"},
   ]
 
 }
